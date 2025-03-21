@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "987967552550",
+    "project_id": "you-e9155",
+    "storage_bucket": "you-e9155.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987967552550:android:b0088589fd123a63913ae7",
+        "android_client_info": {
+          "package_name": "com.utkarsh.you"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyXbvAdIwhA0oTkxuHhHPx-5KeWx2TqjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

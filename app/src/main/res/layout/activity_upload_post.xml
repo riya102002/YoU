@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#1b7593">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- U-shape background -->
+        <View
+            android:id="@+id/backgroundView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/newView1"
+            android:layout_below="@+id/card_view"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="300dp"
+            android:background="@drawable/u_shape_background" />
+
+        <!-- CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="16dp">
+
+            <!-- Linear Layout inside CardView -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/gradient_background"
+                android:padding="16dp">
+
+                <!-- Username CardView -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewUpload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:elevation="8dp"
+                    app:cardCornerRadius="16dp">
+
+                    <!-- Linear Layout for Buttons -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <!-- Upload Icon -->
+                        <ImageView
+                            android:id="@+id/upload_icon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/imageicon"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"/>
+
+                        <!-- Choose Image Text -->
+                        <TextView
+                            android:id="@+id/choose_image_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Choose image to upload"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Username CardView -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewUploadedFileView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:elevation="8dp"
+                    app:cardCornerRadius="16dp">
+
+                    <!-- Linear Layout for File Preview -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:gravity="center_vertical">
+
+                        <!-- Image Preview Icon -->
+                        <ImageView
+                            android:id="@+id/image_preview_icon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/imageplaceholder"/>
+
+                        <!-- Selected PDF Name -->
+                        <TextView
+                            android:id="@+id/selected_pdf_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="No file selected"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:layout_marginStart="16dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Post Caption CardView -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewEditTextPostTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:elevation="8dp"
+                    app:cardCornerRadius="16dp">
+
+                    <!-- EditText for Post Caption -->
+                    <EditText
+                        android:id="@+id/editTextPostCaption"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/black"
+                        android:textColorHint="#877D7D"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_edittext_background"
+                        android:hint="Post Caption"
+                        android:elevation="1dp"
+                        android:layout_margin="10dp"
+                        android:padding="16dp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Post Description CardView -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewEditTextPostDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:elevation="8dp"
+                    app:cardCornerRadius="16dp">
+
+                    <!-- EditText for Post Description -->
+                    <EditText
+                        android:id="@+id/editTextPostDescription"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/black"
+                        android:textColorHint="#877D7D"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_edittext_background"
+                        android:hint="Post Description"
+                        android:elevation="1dp"
+                        android:lines="6"
+                        android:layout_margin="10dp"
+                        android:padding="16dp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Post Keywords CardView -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewEditTextPostKeywords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:elevation="8dp"
+                    app:cardCornerRadius="16dp">
+
+                    <!-- EditText for Post Keywords -->
+                    <EditText
+                        android:id="@+id/editTextPostKeywords"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/black"
+                        android:textColorHint="#877D7D"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_edittext_background"
+                        android:hint="Post Keywords"
+                        android:elevation="1dp"
+                        android:layout_margin="10dp"
+                        android:padding="16dp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Upload Button -->
+                <Button
+                    android:id="@+id/upload_post_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"/>
+
+                <!-- Cancel Button -->
+                <Button
+                    android:id="@+id/cancel_post_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- New view below cardView -->
+        <View
+            android:id="@+id/newView1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/card_view"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent" />
+
+    </RelativeLayout>
+
+</ScrollView>

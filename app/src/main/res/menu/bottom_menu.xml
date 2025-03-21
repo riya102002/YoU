@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"
+        app:cnb_iconColor="@color/white"/>
+    <item
+        android:id="@+id/activity"
+        android:icon="@drawable/baseline_notifications_active_24"
+        android:title="Activity"
+        app:cnb_iconColor="@color/white"/>
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Settings"
+        app:cnb_iconColor="@color/white" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/baseline_logout_24"
+        app:cnb_iconColor="@color/white"
+        android:title="" />
+</menu>

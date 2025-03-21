@@ -1,0 +1,83 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="VIEW Doc"
+        android:paddingTop="5px"
+        android:paddingRight="15px"
+        android:textStyle="bold"
+        android:textColor="#0F2E3F"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:padding="5px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Utkarsh Mishra"
+        android:textStyle="bold"
+        android:textColor="#0F2E3F"
+        android:layout_marginLeft="80dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:padding="5px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Allahabad | Student"
+        android:layout_marginLeft="80dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/sizeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5px"
+        android:layout_marginLeft="80dp"
+        android:textStyle="bold"
+        android:textColor="#0F2E3F"
+        android:textSize="12sp" />
+
+    <TextView
+        android:paddingTop="5px"
+        android:id="@+id/courseTypeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coffee | Business | Friendship"
+        android:layout_marginLeft="30px"
+        android:textColor="#0F2E3F"
+        android:textAlignment="viewEnd"
+        android:textStyle="bold"
+        android:textSize="13sp" />
+
+    <TextView
+        android:paddingTop="5px"
+        android:id="@+id/authorTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coffee | Business | Friendship"
+        android:layout_marginLeft="30px"
+        android:textColor="#0F2E3F"
+        android:textAlignment="viewEnd"
+        android:textStyle="bold"
+        android:textSize="13sp" />
+
+    <TextView
+        android:paddingTop="10px"
+        android:id="@+id/timeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text='Hi community! I am open to new connections "😊"'
+        android:layout_marginLeft="30px"
+        android:textAlignment="viewEnd"
+        android:textColor="#0F2E3F"
+        android:textSize="13sp" />
+</LinearLayout>
